@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  words
+//  dictionary
 //
-//  Created by Jully Nobre on 16/10/18.
+//  Created by Jully Nobre on 17/10/18.
 //  Copyright © 2018 Jully Nobre. All rights reserved.
 //
 
