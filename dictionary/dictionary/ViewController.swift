@@ -15,20 +15,49 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.configureSearchBar()
         
+        self.configureTableView()
+    }
+    
+    func configureTableView(){
+        let nib = UINib(nibName: "WordTableViewCell", bundle: nil)
+        self.wordsTableView.register(nib, forCellReuseIdentifier: "WordTableViewCell")
+        
+        self.wordsTableView.rowHeight = 110
         
         self.wordsTableView.delegate = self
         self.wordsTableView.dataSource = self
+    }
+    
+    func configureSearchBar(){
+        self.navigationItem.largeTitleDisplayMode = .always
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        self.navigationItem.searchController = searchController
+        
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+    }
+}
+
+extension ViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        //imprement searchResults
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = self.wordsTableView.dequeueReusableCell(withIdentifier: "WordTableViewCell", for: indexPath) as! WordTableViewCell
+        
+        //Configure cell
+        
+        return cell
     }
 }
 
