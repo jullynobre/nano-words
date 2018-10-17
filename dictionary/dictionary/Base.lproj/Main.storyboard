@@ -39,6 +39,9 @@
                             <color key="tintColor" red="0.19607843137254902" green="0.20000000000000001" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="wordsTableView" destination="QA7-ef-o59" id="96I-D3-Yqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
