@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         self.wordsTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "WordsSection")
         
         self.wordsTableView.rowHeight = 100
-        self.wordsTableView.sectionHeaderHeight = 50
+        self.wordsTableView.sectionHeaderHeight = 40
         
         self.wordsTableView.delegate = self
         self.wordsTableView.dataSource = self

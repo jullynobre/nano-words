@@ -16,7 +16,7 @@ class WordsSection: UITableViewHeaderFooterView {
     override func draw(_ rect: CGRect) {
         self.label.text = "19/10"
         
-        self.markerView.layer.cornerRadius = 25
+        self.markerView.layer.cornerRadius = 20
     
     }
 
