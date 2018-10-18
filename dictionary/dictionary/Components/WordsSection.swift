@@ -14,7 +14,7 @@ class WordsSection: UITableViewHeaderFooterView {
     @IBOutlet weak var markerView: UIView!
     
     override func draw(_ rect: CGRect) {
-        self.label.text = "19/10/2018"
+        self.label.text = "19/10"
         
         self.markerView.layer.cornerRadius = 25
     

@@ -12,20 +12,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WordTableViewCell" customModule="dictionary" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pineapple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F3-G4-KPi">
-                        <rect key="frame" x="16" y="21" width="265" height="29"/>
+                        <rect key="frame" x="16" y="11" width="265" height="29"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="a tropical American plant bearing a large fleshy edible fruit with a terminal tuft of stiff leaves…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-rx-XlF">
-                        <rect key="frame" x="16" y="49" width="265" height="50"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a tropical American plant bearing a large fleshy edible fruit with a terminal tuft of stiff leaves…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-rx-XlF">
+                        <rect key="frame" x="16" y="39" width="265" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="Jly-m5-U7d"/>
                             <constraint firstAttribute="width" constant="265" id="OJD-FF-3iY"/>
@@ -34,8 +34,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15E-rd-9eY">
-                        <rect key="frame" x="293" y="54" width="11" height="18"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15E-rd-9eY">
+                        <rect key="frame" x="293" y="41" width="11" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="XSQ-eS-rfr"/>
                             <constraint firstAttribute="width" constant="11" id="uz8-Qy-OKc"/>
@@ -46,9 +46,9 @@
                 <constraints>
                     <constraint firstItem="7F3-G4-KPi" firstAttribute="width" secondItem="Aj9-rx-XlF" secondAttribute="width" id="9ma-hm-OEd"/>
                     <constraint firstItem="15E-rd-9eY" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Aw2-US-Wo3"/>
-                    <constraint firstItem="15E-rd-9eY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="29" id="C6l-Rf-fBi"/>
                     <constraint firstItem="7F3-G4-KPi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Z3U-Rg-b4S"/>
                     <constraint firstItem="Aj9-rx-XlF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZgC-aD-qBb"/>
+                    <constraint firstItem="15E-rd-9eY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="knS-a4-JVi"/>
                     <constraint firstItem="Aj9-rx-XlF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="lyg-gS-rPh"/>
                     <constraint firstItem="7F3-G4-KPi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n3E-qD-6CE"/>
                 </constraints>
