@@ -15,6 +15,8 @@
 		57A3C5BE2177615400588172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5BC2177615400588172 /* LaunchScreen.storyboard */; };
 		57A3C5D62177C0B800588172 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5D42177C0B800588172 /* WordTableViewCell.swift */; };
 		57A3C5D72177C0B800588172 /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5D52177C0B800588172 /* WordTableViewCell.xib */; };
+		57A3C5D92177CA9300588172 /* WordsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A3C5D82177CA9300588172 /* WordsSection.swift */; };
+		57A3C5DF2177CCF300588172 /* WordsSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A3C5DE2177CCF300588172 /* WordsSection.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		57A3C5BF2177615400588172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57A3C5D42177C0B800588172 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		57A3C5D52177C0B800588172 /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
+		57A3C5D82177CA9300588172 /* WordsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsSection.swift; sourceTree = "<group>"; };
+		57A3C5DE2177CCF300588172 /* WordsSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordsSection.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				57A3C5D42177C0B800588172 /* WordTableViewCell.swift */,
 				57A3C5D52177C0B800588172 /* WordTableViewCell.xib */,
+				57A3C5D82177CA9300588172 /* WordsSection.swift */,
+				57A3C5DE2177CCF300588172 /* WordsSection.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 				57A3C5D72177C0B800588172 /* WordTableViewCell.xib in Resources */,
 				57A3C5BB2177615400588172 /* Assets.xcassets in Resources */,
 				57A3C5B62177615300588172 /* Main.storyboard in Resources */,
+				57A3C5DF2177CCF300588172 /* WordsSection.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +162,7 @@
 			files = (
 				57A3C5B32177615300588172 /* ViewController.swift in Sources */,
 				57A3C5D62177C0B800588172 /* WordTableViewCell.swift in Sources */,
+				57A3C5D92177CA9300588172 /* WordsSection.swift in Sources */,
 				57A3C5B92177615300588172 /* dictionary.xcdatamodeld in Sources */,
 				57A3C5B12177615300588172 /* AppDelegate.swift in Sources */,
 			);

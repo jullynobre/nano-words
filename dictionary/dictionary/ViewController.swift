@@ -21,8 +21,11 @@ class ViewController: UIViewController {
     }
     
     func configureTableView(){
-        let nib = UINib(nibName: "WordTableViewCell", bundle: nil)
-        self.wordsTableView.register(nib, forCellReuseIdentifier: "WordTableViewCell")
+        let cellNib = UINib(nibName: "WordTableViewCell", bundle: nil)
+        self.wordsTableView.register(cellNib, forCellReuseIdentifier: "WordTableViewCell")
+        
+        let headerNib = UINib(nibName: "WordsSection", bundle: nil)
+        self.wordsTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "WordsSection")
         
         self.wordsTableView.rowHeight = 110
         
@@ -48,8 +51,12 @@ extension ViewController: UISearchResultsUpdating{
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,6 +65,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         //Configure cell
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = self.wordsTableView.dequeueReusableHeaderFooterView(withIdentifier: "WordsSection") as! WordsSection
+        
+        return header
     }
 }
 
